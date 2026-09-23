@@ -1,28 +1,36 @@
 {
 	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
 	"type": "connection",
-	"id": "your-module-name",
-	"name": "your-module-name",
-	"shortname": "module-shortname",
-	"description": "A short one line description of your module",
-	"version": "0.0.0",
+	"id": "utopianacademy-deckboy",
+	"name": "utopianacademy-deckboy",
+	"shortname": "Deckboy",
+	"description": "Cue deck for live events — transport, cue tally, output health and countdowns",
+	"version": "1.0.0",
 	"license": "MIT",
-	"repository": "git+https://github.com/bitfocus/companion-module-your-module-name.git",
-	"bugs": "https://github.com/bitfocus/companion-module-your-module-name/issues",
+	"repository": "git+https://github.com/bitfocus/companion-module-utopianacademy-deckboy.git",
+	"bugs": "https://github.com/bitfocus/companion-module-utopianacademy-deckboy/issues",
 	"maintainers": [
 		{
-			"name": "Your name",
-			"email": "Your email"
+			"name": "Deckboy Contributors",
+			"email": "",
+			"github": "Utopian-Academy"
 		}
 	],
+	"legacyIds": [],
 	"runtime": {
 		"type": "node22",
 		"api": "nodejs-ipc",
 		"apiVersion": "0.0.0",
-		"entrypoint": "../src/main.js"
+		"entrypoint": "../main.js"
 	},
-	"legacyIds": [],
-	"manufacturer": "Your company",
-	"products": ["Your product"],
-	"keywords": []
+	"manufacturer": "Utopian Academy",
+	"products": [
+		"Deckboy"
+	],
+	"keywords": [
+		"Playback",
+		"Media",
+		"Video",
+		"Cue"
+	]
 }
