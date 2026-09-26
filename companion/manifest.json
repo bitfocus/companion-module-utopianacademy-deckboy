@@ -1,14 +1,13 @@
 {
-	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
 	"type": "connection",
 	"id": "utopianacademy-deckboy",
 	"name": "utopianacademy-deckboy",
 	"shortname": "Deckboy",
 	"description": "Cue deck for live events — transport, cue tally, output health and countdowns",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"license": "MIT",
-	"repository": "git+https://github.com/bitfocus/companion-module-utopianacademy-deckboy.git",
-	"bugs": "https://github.com/bitfocus/companion-module-utopianacademy-deckboy/issues",
+	"repository": "https://github.com/Utopian-Academy/Deckboy",
+	"bugs": "https://github.com/Utopian-Academy/Deckboy/issues",
 	"maintainers": [
 		{
 			"name": "Deckboy Contributors",
@@ -20,7 +19,7 @@
 	"runtime": {
 		"type": "node22",
 		"api": "nodejs-ipc",
-		"apiVersion": "0.0.0",
+		"apiVersion": "2.1.3",
 		"entrypoint": "../main.js"
 	},
 	"manufacturer": "Utopian Academy",

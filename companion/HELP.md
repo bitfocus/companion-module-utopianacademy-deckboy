@@ -67,3 +67,20 @@ $(deckboy:deck1_remaining)
 Ready-made buttons with their feedbacks already wired: **Transport**, **Status** (now playing
 with countdown, connection watchdog), **Output** (on/off, fullscreen, clear, blackout, PANIC) and
 **Cues** (a cue button with tally; duplicate it and change the cue number).
+
+### Security
+
+There is no password on Deckboy's control port. With **REMOTE** on, anything that can reach the
+port can drive the show — take cues, black the output, run PANIC. On a venue or hotel network,
+put Deckboy behind a firewall rule rather than relying on the port being obscure, and leave
+REMOTE off when Companion runs on the same machine.
+
+### If it will not connect
+
+1. Is **Settings → Network → REMOTE** on? It is off by default, and Deckboy is then reachable
+   only from its own machine.
+2. Does the port match **Settings → Network → Companion port**?
+3. Can the machine reach it at all? Connect to the port by hand and type `HELP`; Deckboy prints
+   its whole protocol. If that fails it is the network or a firewall, not this module.
+4. Deckboy's own `--devices` prints the audio devices, displays and MIDI ports it can actually
+   see, which separates a Deckboy fault from a machine that cannot see its hardware.
