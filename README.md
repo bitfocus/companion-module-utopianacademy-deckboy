@@ -15,7 +15,7 @@ yarn test      # protocol and wiring tests, no Companion needed
 yarn package   # builds the module package
 ```
 
-Needs Node 22.20 or newer.
+Needs Node 26.
 
 ## Licence
 
